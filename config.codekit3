@@ -9,12 +9,12 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
-    "\/assets\/pexels-cyril-caiazzo-1634502.jpg" : {
+    "\/assets\/Images\/pexels-cyril-caiazzo-1634502.jpg" : {
       "ft" : 16384,
       "iS" : 1207392,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-cyril-caiazzo-1634502.jpg",
+      "oAP" : "\/assets\/Images\/pexels-cyril-caiazzo-1634502.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -22,12 +22,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-daria-shevtsova-3644742.jpg" : {
+    "\/assets\/Images\/pexels-daria-shevtsova-3644742.jpg" : {
       "ft" : 16384,
       "iS" : 6584289,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-daria-shevtsova-3644742.jpg",
+      "oAP" : "\/assets\/Images\/pexels-daria-shevtsova-3644742.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -35,12 +35,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-furkanfdemir-6310601.jpg" : {
+    "\/assets\/Images\/pexels-furkanfdemir-6310601.jpg" : {
       "ft" : 16384,
       "iS" : 1316987,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-furkanfdemir-6310601.jpg",
+      "oAP" : "\/assets\/Images\/pexels-furkanfdemir-6310601.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -48,12 +48,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-gary-barnes-6231861.jpg" : {
+    "\/assets\/Images\/pexels-gary-barnes-6231861.jpg" : {
       "ft" : 16384,
       "iS" : 2288458,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-gary-barnes-6231861.jpg",
+      "oAP" : "\/assets\/Images\/pexels-gary-barnes-6231861.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -61,12 +61,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-karolina-grabowska-4751987.jpg" : {
+    "\/assets\/Images\/pexels-karolina-grabowska-4751987.jpg" : {
       "ft" : 16384,
       "iS" : 5285771,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-karolina-grabowska-4751987.jpg",
+      "oAP" : "\/assets\/Images\/pexels-karolina-grabowska-4751987.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -74,12 +74,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-karolina-grabowska-4752011.jpg" : {
+    "\/assets\/Images\/pexels-karolina-grabowska-4752011.jpg" : {
       "ft" : 16384,
       "iS" : 3875579,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-karolina-grabowska-4752011.jpg",
+      "oAP" : "\/assets\/Images\/pexels-karolina-grabowska-4752011.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -87,12 +87,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-madison-inouye-1382394.jpg" : {
+    "\/assets\/Images\/pexels-madison-inouye-1382394.jpg" : {
       "ft" : 16384,
       "iS" : 517779,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-madison-inouye-1382394.jpg",
+      "oAP" : "\/assets\/Images\/pexels-madison-inouye-1382394.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -100,12 +100,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-oziel-gómez-837267.jpg" : {
+    "\/assets\/Images\/pexels-oziel-gómez-837267.jpg" : {
       "ft" : 16384,
       "iS" : 545678,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-oziel-gómez-837267.jpg",
+      "oAP" : "\/assets\/Images\/pexels-oziel-gómez-837267.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -113,12 +113,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-pixabay-54601.jpg" : {
+    "\/assets\/Images\/pexels-pixabay-54601.jpg" : {
       "ft" : 16384,
       "iS" : 3386306,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-pixabay-54601.jpg",
+      "oAP" : "\/assets\/Images\/pexels-pixabay-54601.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -126,12 +126,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-scott-webb-1048035.jpg" : {
+    "\/assets\/Images\/pexels-scott-webb-1048035.jpg" : {
       "ft" : 16384,
       "iS" : 4225974,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-scott-webb-1048035.jpg",
+      "oAP" : "\/assets\/Images\/pexels-scott-webb-1048035.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -139,12 +139,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/pexels-secret-garden-2879832.jpg" : {
+    "\/assets\/Images\/pexels-secret-garden-2879832.jpg" : {
       "ft" : 16384,
       "iS" : 2620372,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/pexels-secret-garden-2879832.jpg",
+      "oAP" : "\/assets\/Images\/pexels-secret-garden-2879832.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
