@@ -152,6 +152,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/svg\/GreensgrowWest_logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/svg\/GreensgrowWest_logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
