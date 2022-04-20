@@ -417,11 +417,6 @@ header .content {
 /* =============
     Store Info
 ============= */
-.store-info .store-info ul {
-  display: grid;
-  grid-template-columns: 17px auto 17px;
-}
-
 /* =============
     Project
 ============= */
