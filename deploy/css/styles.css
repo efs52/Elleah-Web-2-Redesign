@@ -410,7 +410,7 @@ header .content {
 /* =============
     Hero 1
 ============= */
-.hero img {
+.hero1 img {
   width: 100%;
 }
 
@@ -437,3 +437,6 @@ header .content {
 /* =============
     Whats New
 ============= */
+.whats-new .whats-new-content img {
+  width: 100%;
+}
