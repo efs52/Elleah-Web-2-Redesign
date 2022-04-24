@@ -5,5 +5,16 @@
 
 
 .nav{
+    .container{
+        display:grid;
+        grid-template-columns: 17px auto 17px ;
+        grid-template-areas: 
+        ". content ."
+        ;
+        .content{
+            grid-area:content;
+    
+        }
+    }
     
 }
