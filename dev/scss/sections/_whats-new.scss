@@ -8,6 +8,24 @@
             width:100%;
         }
 
+        @include md{
+            grid-template-columns: 50% 50%;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns: 17px auto 17px ;
+            grid-template-areas: 
+            ". content ."
+            ;
+            .content{
+                grid-area:content;
+                @include md{
+                    grid-template-columns: 50% 50%;
+                }
+
+            }
+        }
 
     }
 }

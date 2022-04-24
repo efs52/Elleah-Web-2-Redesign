@@ -2,7 +2,13 @@
     Base
 ============= */
 
+body{
+    background-color: $white;
 
+    @include lg{
+        background-color: $black;
+    }
+}
 .container{
     display:grid;
     grid-template-columns: 17px auto 17px ;
