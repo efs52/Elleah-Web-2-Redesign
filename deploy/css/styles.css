@@ -357,10 +357,40 @@ template {
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". content .";
 }
+.body .container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  .body .container {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+.body .container .content {
+  grid-area: content;
+}
 
 /* =============
     Typography
 ============= */
+.project .container .content h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+.project .container .content a {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  color: #333D2A;
+}
+
 /* =============
     Buttons
 ============= */
@@ -414,71 +444,72 @@ header .content {
 }
 
 /* =============
-    Hero 1
+    Hero
 ============= */
-.hero1 img {
+.hero .container .content img {
   width: 100%;
 }
 
 /* =============
-    Store Info
+    Sub-Content
 ============= */
-.store-info .container {
+.sub-content .container .content {
   display: grid;
-  grid-template-columns: 17px auto 17px;
-  grid-template-areas: ". content .";
-}
-.store-info .container .content {
   grid-area: content;
 }
 
 /* =============
     Project
 ============= */
-.project .container {
-  display: grid;
-  grid-template-columns: 17px auto 17px;
-  grid-template-areas: ". content .";
-}
 .project .container .content {
   grid-area: content;
+  display: grid;
+  grid-template-areas: ". content .";
+  background: #B7B7A5;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
+}
+.project .container .content img {
+  border-radius: 50%;
+}
+.project .container .content a {
+  background: #FAE4D3;
 }
 
 /* =============
-    heroes
+    Gallery
 ============= */
-.heroes .heroes-content img {
-  width: 414px;
-}
-
-/* =============
-    heroes
-============= */
-.heroes .heroes-content img {
-  width: 414px;
+.gallery .container .content img {
+  width: 100%;
 }
 
 /* =============
     Whats New
 ============= */
-.whats-new .whats-new-content img {
+.whats-new .whats-new-articles img {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-content {
-    grid-template-columns: 50% 50%;
+  .whats-new .whats-new-articles {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". articles .";
   }
 }
-.whats-new .whats-new-content .container {
-  display: grid;
-  grid-template-columns: 17px auto 17px;
-  grid-template-areas: ". content .";
+@media (min-width: 1200px) {
+  .whats-new .whats-new-articles {
+    grid-template-columns: auto 1140px auto;
+  }
 }
-.whats-new .whats-new-content .container .content {
-  grid-area: content;
+.whats-new .whats-new-articles .article-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 15px;
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-content .container .content {
-    grid-template-columns: 50% 50%;
+  .whats-new .whats-new-articles .article-grid {
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-area: articles;
+    grid-template-areas: "a1 a1 a2 a2" "a3 a3 a4 a4" " . a5 a5 . ";
   }
 }

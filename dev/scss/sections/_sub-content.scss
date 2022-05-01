@@ -1,16 +1,13 @@
 /* =============
-    Checklist
+    Sub-Content
 ============= */
 
 
-.check-list{
+.sub-content{
     .container{
-        display:grid;
-        grid-template-columns: 17px auto 17px ;
-        grid-template-areas: 
-        ". content ."
-        ;
         .content{
+            display: grid;
+            // grid-template-columns: 17px auto 17px ;
             grid-area:content;
     
         }

@@ -3,29 +3,40 @@
 ============= */
 
 .whats-new{
-    .whats-new-content{
+    .whats-new-articles{
+
         img{
-            width:100%;
+            width:100%
         }
 
         @include md{
-            grid-template-columns: 50% 50%;
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas: ". articles .";
         }
 
-        .container{
-            display:grid;
-            grid-template-columns: 17px auto 17px ;
-            grid-template-areas: 
-            ". content ."
-            ;
-            .content{
-                grid-area:content;
-                @include md{
-                    grid-template-columns: 50% 50%;
-                }
+          @include xl{
+            grid-template-columns: auto 1140px auto
+        }
 
+          .article-grid{
+            display: grid;
+            grid-template-columns: 100%;
+            gap:15px;
+
+            @include md{
+                display: grid;
+                grid-template-columns: repeat (4,1fr);
+                grid-area: articles;
+
+                grid-template-areas:
+                "a1 a1 a2 a2"
+                "a3 a3 a4 a4"
+                " . a5 a5 . ";
             }
         }
+
+        
 
     }
 }
