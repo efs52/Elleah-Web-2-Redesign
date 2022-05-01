@@ -352,13 +352,10 @@ template {
 /* =============
     Base
 ============= */
-.container {
+.body {
   display: grid;
-  grid-template-columns: 17px auto 17px;
+  grid-template-columns: 15px auto 15px;
   grid-template-areas: ". content .";
-}
-.container .content {
-  grid-area: content;
 }
 
 /* =============
@@ -407,6 +404,15 @@ header .content {
 /* =============
     Nav
 ============= */
+.nav .container {
+  display: grid;
+  grid-template-columns: 17px auto 17px;
+  grid-template-areas: ". content .";
+}
+.nav .container .content {
+  grid-area: content;
+}
+
 /* =============
     Hero 1
 ============= */
@@ -417,21 +423,39 @@ header .content {
 /* =============
     Store Info
 ============= */
-/* =============
-    Project
-============= */
-/* =============
-    Hero 2
-============= */
-.hero2 img {
-  width: 100%;
+.store-info .container {
+  display: grid;
+  grid-template-columns: 17px auto 17px;
+  grid-template-areas: ". content .";
+}
+.store-info .container .content {
+  grid-area: content;
 }
 
 /* =============
-    Hero 3
+    Project
 ============= */
-.hero3 img {
-  width: 100%;
+.project .container {
+  display: grid;
+  grid-template-columns: 17px auto 17px;
+  grid-template-areas: ". content .";
+}
+.project .container .content {
+  grid-area: content;
+}
+
+/* =============
+    heroes
+============= */
+.heroes .heroes-content img {
+  width: 414px;
+}
+
+/* =============
+    heroes
+============= */
+.heroes .heroes-content img {
+  width: 414px;
 }
 
 /* =============
@@ -439,4 +463,22 @@ header .content {
 ============= */
 .whats-new .whats-new-content img {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .whats-new .whats-new-content {
+    grid-template-columns: 50% 50%;
+  }
+}
+.whats-new .whats-new-content .container {
+  display: grid;
+  grid-template-columns: 17px auto 17px;
+  grid-template-areas: ". content .";
+}
+.whats-new .whats-new-content .container .content {
+  grid-area: content;
+}
+@media (min-width: 768px) {
+  .whats-new .whats-new-content .container .content {
+    grid-template-columns: 50% 50%;
+  }
 }

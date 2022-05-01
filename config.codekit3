@@ -126,7 +126,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/images\/pexels-oziel-gómez-837267.jpg" : {
+    "\/assets\/images\/pexels-oziel-gómez-837267.jpg" : {
       "ft" : 16384,
       "iS" : 545678,
       "jF" : 0,
@@ -531,7 +531,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/images\/pexels-oziel-gómez-837267.jpg" : {
+    "\/deploy\/img\/images\/pexels-oziel-gómez-837267.jpg" : {
       "ft" : 16384,
       "iS" : 545678,
       "jF" : 0,
@@ -982,7 +982,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_check-list.scss" : {
+    "\/dev\/scss\/sections\/_gallery.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -990,14 +990,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_check-list.css",
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/sections\/_gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_hero1.scss" : {
+    "\/dev\/scss\/sections\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1006,22 +1006,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hero1.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_heroes.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_heroes.css",
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1057,7 +1042,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_store-info.scss" : {
+    "\/dev\/scss\/sections\/_sub-content.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1066,7 +1051,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_store-info.css",
+      "oAP" : "\/dev\/scss\/sections\/_sub-content.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

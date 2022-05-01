@@ -2,21 +2,11 @@
     Base
 ============= */
 
-body{
-    background-color: $white;
+.body{
+      display:grid;
+      grid-template-columns: 15px auto 15px;
+      grid-template-areas:
+      ". content ."
+      ;
 
-    @include lg{
-        background-color: $black;
-    }
-}
-.container{
-    display:grid;
-    grid-template-columns: 17px auto 17px ;
-    grid-template-areas: 
-    ". content ."
-    ;
-    .content{
-        grid-area:content;
-
-    }
 }
