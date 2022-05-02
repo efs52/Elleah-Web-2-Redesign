@@ -418,17 +418,51 @@ textarea {
 /* =============
     Header
 ============= */
-header .content {
+.header .container .content .img {
   display: grid;
-  grid-template-columns: 50% 50%;
+  margin-left: 45%;
+  margin-right: 45%;
+  width: 37px;
 }
 
 /* =============
     Footer
 ============= */
-.footer .content {
+.footer .container .content {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
+}
+@media (min-width: 768px) {
+  .footer .container .content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "locations newsletter" "locations social";
+  }
+}
+@media (min-width: 992px) {
+  .footer .container .content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "locations newsletter social";
+  }
+}
+.footer .container .content .locations ul, .footer .container .content .follow ul {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .footer .container .content .locations {
+    grid-area: locations;
+  }
+}
+@media (min-width: 768px) {
+  .footer .container .content .newsletter {
+    grid-area: newsletter;
+  }
+}
+@media (min-width: 768px) {
+  .footer .container .content .follow {
+    grid-area: follow;
+  }
 }
 
 /* =============
@@ -441,6 +475,7 @@ header .content {
 }
 .nav .container .content {
   grid-area: content;
+  text-align: center;
 }
 
 /* =============
@@ -461,24 +496,44 @@ header .content {
 /* =============
     Project
 ============= */
-.project .container .content {
-  grid-area: content;
+.project .project-container {
   display: grid;
-  grid-template-areas: ". content .";
-  background: #B7B7A5;
-  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
+  grid-template-columns: 50% 50%;
 }
-.project .container .content img {
-  border-radius: 50%;
+.project .project-container .project1 {
+  background-color: black;
 }
-.project .container .content a {
-  background: #FAE4D3;
+.project .project-container .project2 {
+  background-color: red;
 }
 
 /* =============
     Gallery
 ============= */
-.gallery .container .content img {
+.gallery .container .content {
+  display: grid;
+}
+.gallery .container .content ul {
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .gallery .container .content ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 992px) {
+  .gallery .container .content ul {
+    grid-template-columns: 60% auto;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery .container .content ul {
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
+.gallery .container .content ul li img {
   width: 100%;
 }
 

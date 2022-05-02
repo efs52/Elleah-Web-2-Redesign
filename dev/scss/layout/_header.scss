@@ -2,10 +2,17 @@
     Header
 ============= */
 
-header{
-      .content{
-          display:grid;
-          grid-template-columns: 50% 50%;
-          
-      }
+
+.header{
+    .container{
+        .content{
+            .img{
+                display:grid;
+                margin-left:45%;
+                margin-right:45%;
+                width:37px;
+
+            }
+        }
+    }
 }
