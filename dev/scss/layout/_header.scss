@@ -2,7 +2,7 @@
     Header
 ============= */
 
-
+/*
 .header{
     .container{
         .content{
@@ -11,8 +11,16 @@
                 margin-left:45%;
                 margin-right:45%;
                 width:37px;
+                height:56px;
 
             }
         }
     }
+}
+
+*/ 
+
+img.content{
+    width:37px;
+                height:56px;
 }

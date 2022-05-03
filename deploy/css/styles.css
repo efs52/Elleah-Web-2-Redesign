@@ -418,11 +418,26 @@ textarea {
 /* =============
     Header
 ============= */
-.header .container .content img {
-  display: grid;
-  margin-left: 45%;
-  margin-right: 45%;
+/*
+.header{
+    .container{
+        .content{
+            img{
+                display:grid;
+                margin-left:45%;
+                margin-right:45%;
+                width:37px;
+                height:56px;
+
+            }
+        }
+    }
+}
+
+*/
+img.content {
   width: 37px;
+  height: 56px;
 }
 
 /* =============
@@ -501,10 +516,10 @@ textarea {
   grid-template-columns: 50% 50%;
 }
 .project .project-container .project1 {
-  background-color: black;
+  background-color: #B7B7A5;
 }
 .project .project-container .project2 {
-  background-color: red;
+  background-color: #B7B7A5;
 }
 
 /* =============
