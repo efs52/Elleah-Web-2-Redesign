@@ -2,9 +2,9 @@
     Footer
 ============= */
 
-.footer{
-    .container{
-        .content{
+footer{
+    
+    .content{
             display:grid;
             grid-template-columns: 100%;
     
@@ -44,5 +44,5 @@
                 }
             }
         }   
-    }
+    
 }
