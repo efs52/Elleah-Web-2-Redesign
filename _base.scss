@@ -2,13 +2,9 @@
     Base
 ============= */
 
-.body{
-      display:grid;
-      grid-template-columns: 15px auto 15px;
-      grid-template-areas:
-      ". content ."
-      ;
-      .container{
+
+
+.container{
           display:grid;
           grid-template-columns: 15px auto 15px;
           grid-template-areas:
@@ -21,8 +17,6 @@
        .content{
            grid-area:content;
        }
-
-      }
-
-
 }
+
+
