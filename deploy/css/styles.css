@@ -352,25 +352,6 @@ template {
 /* =============
     Base
 ============= */
-body {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". content .";
-}
-body .container {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". content .";
-}
-@media (min-width: 1200px) {
-  body .container {
-    grid-template-columns: auto 1140px auto;
-  }
-}
-body .container .content {
-  grid-area: content;
-}
-
 /* =============
     Typography
 ============= */
