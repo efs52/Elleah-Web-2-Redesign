@@ -3,7 +3,16 @@
 ============= */
 
 header{
-    img{
-        width:37px;
+    .content{
+        text-align: center;
+        background-color: #173726;
+
+        img{
+            display: block;
+            margin: auto;
+            width:37px;
+        
+           
+        }
     }
 }

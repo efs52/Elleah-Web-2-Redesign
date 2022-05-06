@@ -1,0 +1,38 @@
+/* =============
+    Sub-Content
+============= */
+
+
+.divider{
+    .container{
+        .content{
+            display: grid;
+            // grid-template-columns: 17px auto 17px ;
+            grid-area:content;
+
+            h2{
+                font-family: 'Playfair Display';
+                font-weight: Bold;
+                font-size: 13px;
+            }
+            h3{
+                font-family: 'Playfair Display';
+                font-weight: 600;
+                font-size: 13px;
+
+            h4{
+                font-family: 'Open Sans';
+                font-size: 16px;
+            }
+            }
+            p{
+                font-family: 'Work Sans';
+                font-weight: 400;
+                font-size: 10px;
+
+
+                }
+            }
+        }
+    }
+

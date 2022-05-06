@@ -3,20 +3,25 @@
 ============= */
 
 
+body{
+    
+background-color: $seafoamBG;
 
-.container{
-          display:grid;
-          grid-template-columns: 15px auto 15px;
-          grid-template-areas:
-          ". content ."
-          ;
-        @include xl{
-            grid-template-columns: auto 1140px auto;
-        }
+    .container{
+        display:grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas:
+        ". content ."
+        ;
+      @include xl{
+          grid-template-columns: auto 1140px auto;
+      }
 
-       .content{
-           grid-area:content;
-       }
+     .content{
+         grid-area:content;
+     }
+}
+
 }
 
 
