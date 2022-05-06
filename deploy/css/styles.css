@@ -352,6 +352,23 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: #f8f9fa;
+}
+body .container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  body .container {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+body .container .content {
+  grid-area: content;
+}
+
 /* =============
     Typography
 ============= */
@@ -402,6 +419,8 @@ header .content {
 header .content img {
   display: block;
   margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 37px;
 }
 
@@ -461,6 +480,8 @@ footer .content .locations ul, footer .content .follow ul {
 .nav .container .content {
   grid-area: content;
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* =============
@@ -487,9 +508,9 @@ footer .content .locations ul, footer .content .follow ul {
   font-weight: 600;
   font-size: 13px;
 }
-.divider .container .content h3 h4 {
+.divider .container .content h4 {
   font-family: "Open Sans";
-  font-size: 16px;
+  font-size: 11px;
 }
 .divider .container .content p {
   font-family: "Work Sans";
