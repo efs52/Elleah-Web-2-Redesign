@@ -430,7 +430,6 @@ header .content img {
 footer {
   background-color: #e2e2db;
   text-decoration-color: #173726;
-  padding: 0;
 }
 footer .content {
   display: grid;
