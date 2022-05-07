@@ -6,6 +6,8 @@ header{
     .content{
         text-align: center;
         background-color: #173726;
+        display:grid;
+        grid-template-columns: 50% 50%;
 
         img{
             display: block;
@@ -13,8 +15,38 @@ header{
             padding-top: 15px;
             padding-bottom: 15px;
             width:37px;
+
+            @include md{
+                width: 33px;
+            }
         
-           
+            @include lg{
+                width:39px;
+            }
+            
+            @include xl{
+                width: 48px;
+            }
         }
+    }
+
+    h1{
+        display:none;
+        font-weight: 600;
+        color: white;
+
+        @include md{
+            display: block;
+            font-size: 31px;
+        }
+
+        @include lg{
+            font-size: 36px;
+        }
+
+        @include xl{
+            font-size: 40px;
+        }
+
     }
 }
