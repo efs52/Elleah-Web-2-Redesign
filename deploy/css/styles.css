@@ -413,52 +413,65 @@ textarea {
     Header
 ============= */
 header .content {
-  text-align: center;
   background-color: #173726;
+  color: white;
   display: grid;
   grid-template-columns: 50% 50%;
 }
-header .content img {
-  display: block;
-  margin: auto;
+header .content .site-logo {
+  width: 37px;
+  margin: 0;
+  text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 37px;
 }
 @media (min-width: 768px) {
-  header .content img {
+  header .content .site-logo {
     width: 33px;
   }
 }
 @media (min-width: 992px) {
-  header .content img {
+  header .content .site-logo {
     width: 39px;
   }
 }
 @media (min-width: 1200px) {
-  header .content img {
+  header .content .site-logo {
     width: 48px;
   }
 }
-header h1 {
+header .content h1 {
   display: none;
   font-weight: 600;
-  color: white;
+  color: #fae4d3;
 }
 @media (min-width: 768px) {
-  header h1 {
+  header .content h1 {
     display: block;
     font-size: 31px;
   }
 }
 @media (min-width: 992px) {
-  header h1 {
+  header .content h1 {
     font-size: 36px;
   }
 }
 @media (min-width: 1200px) {
-  header h1 {
+  header .content h1 {
     font-size: 40px;
+  }
+}
+header .content h1 span {
+  font-size: 10px;
+}
+@media (min-width: 992px) {
+  header .content h1 span {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  header .content h1 span {
+    font-size: 13px;
   }
 }
 

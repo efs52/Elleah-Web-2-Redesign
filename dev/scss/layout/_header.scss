@@ -3,50 +3,67 @@
 ============= */
 
 header{
+
     .content{
-        text-align: center;
         background-color: #173726;
+        color: white;
         display:grid;
         grid-template-columns: 50% 50%;
 
-        img{
-            display: block;
-            margin: auto;
+        .site-logo{
+            width:37px;
+            margin: 0;
+            text-align: center;
             padding-top: 15px;
             padding-bottom: 15px;
-            width:37px;
 
             @include md{
                 width: 33px;
             }
-        
+
             @include lg{
-                width:39px;
+                width: 39px;
             }
-            
+
             @include xl{
                 width: 48px;
             }
         }
-    }
 
-    h1{
-        display:none;
-        font-weight: 600;
-        color: white;
+        h1{
+            display: none;
+            font-weight: 600;
+            color: $lightpeach;
 
-        @include md{
-            display: block;
-            font-size: 31px;
+            @include md{
+                display: block;
+                font-size: 31px;
+            }
+
+            @include lg{
+                font-size: 36px;
+            }
+
+            @include xl{
+                font-size: 40px;
+            }
+
+            span{
+                font-size: 10px;
+
+                @include lg{
+                    font-size: 12px;
+                }
+
+                @include xl{
+                    font-size: 13px;
+                }
+            }
         }
-
-        @include lg{
-            font-size: 36px;
-        }
-
-        @include xl{
-            font-size: 40px;
-        }
-
     }
 }
+  
+
+ 
+
+ 
