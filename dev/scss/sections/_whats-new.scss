@@ -8,9 +8,12 @@
         h2{
             font-family: 'Playfair Display';
             font-weight: 500;
-            font-size: 22px;
+            font-size: 26px;
             color: $forestgreen;
             letter-spacing: 0.5px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            padding-top: 70px;
 
             @include md{
                 font-size: 32px;
@@ -43,6 +46,7 @@
             display: grid;
             grid-template-columns: 100%;
             gap:15px;
+            padding-bottom: 100px;
 
             @include md{
                 display: grid;
@@ -83,8 +87,8 @@
                 font-family: 'Playfair Display';
                 font-weight: 600;
                 font-size: 26px;
-                margin-left: 17px;
-                margin-right: 17px;
+                padding-top: 20px;
+                padding-left: 10px;
             }
 
             &.article-1{
@@ -106,6 +110,7 @@
             }
 
             &.article-5{
+                
                 @include md{
                     grid-area: a5;
                 }
@@ -116,17 +121,23 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 22px;
-                margin-left: 17px;
-                margin-right: 17px;
+                padding: 10px;
+                padding-bottom: 60px;
             }
 
-            .read-more{
-                width: 99px;
-                margin-left: 33px;
-            }
 
-            a{
+            button{
                 margin-left: 33px;
+                color: $forestgreen;
+                background-color: $lightpeach;
+                padding: 8px;
+                width: 130px;
+                border: none;
+                font-family: "Work Sans";
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 30px;
+
             }
         }
     }

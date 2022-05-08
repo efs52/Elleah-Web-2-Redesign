@@ -6,11 +6,13 @@ footer{
 
     background-color: $bone;
     color: $forestgreen;
+    gap: 50px;
     
     
     .content{
             display:grid;
             grid-template-columns: 100%;
+            padding: 20px;
     
             @include md{
                 display: grid;
@@ -30,6 +32,7 @@ footer{
                 font-family: 'Playfair Display';
                 font-size: 20px;
                 font-weight: 600;
+                padding-top: 30px;
             }
     
             .locations, .follow{
@@ -41,11 +44,18 @@ footer{
                        font-size: 16px;
                        font-family: 'Open Sans';
                        font-weight: 600;
+                       padding-bottom: 15px;
+                       padding-top: 15px;
+                       
                     }
 
                     p{
                         font-size: 14px;
                         font-weight: 400;
+                        padding: 10px;
+                    }
+                    .location-icon, .phone-icon{
+                        display: inline-block;
                     }
                 }
                 
@@ -57,6 +67,36 @@ footer{
             }
 
             .newsletter{
+
+                form{
+                    display: flex;
+                    padding: 20px;
+
+                    input{
+                        width: 100%;
+                        background-color: $seafoamBG;
+                        border: none;
+                        font-family: 'Work Sans';
+                        color: $forestgreen;
+                        font-weight: 600;
+                        padding: 15px;
+
+                    }
+                }
+
+                button{
+                    background-color: $forestgreen;
+                    font-family: "Work Sans";
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $lightpeach;
+                    border: none;
+                    width: 90px;
+                    padding: 10px 0 10px 0;
+
+
+                }
+
                 @include md{
                     grid-area: newsletter;
                 }
@@ -68,6 +108,7 @@ footer{
                 }
                 li{
                     display: inline;
+                    padding: 10px;
                 }
             }
         }   

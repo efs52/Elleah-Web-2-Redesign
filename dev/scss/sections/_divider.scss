@@ -47,17 +47,23 @@
             }
         }
 
+        button{
+            color: $forestgreen;
+            background-color: $lightpeach;
+            padding: 1px;
+            width: 140px;
+            border: none;
+            font-family: "Work Sans";
+            font-weight: 500;
+            font-size: 16px;
+            margin: 15px;
+
+        }
+
         img{
             grid-area: image;
             border-radius: 100px;
             margin-left: 80px;
-        }
-
-        a{
-            .start-here .order-here{
-                grid-area: button;
-                border-radius: 0px;
-            }
         }
     } 
 }
