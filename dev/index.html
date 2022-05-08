@@ -8,8 +8,9 @@
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" 
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@500;600;700;800&family=Work+Sans:wght@300;400;500;600&display=swap" 
+      rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
     <title>Greensgrow West</title>
   </head>
@@ -17,71 +18,61 @@
 <body>
 
 <!-- Header -->
-    <header>
-      <div class="content">
-        <img src="/deploy/img/svg/GreensgrowWest_logo.svg" alt="Site Logo">
-      </div>
+    <header class="container">
+        <div class="content">
+             <img class="site-logo" src="/deploy/img/svg/GreensgrowWest_logo.svg" alt="Site Logo">
+             <h1>Greensgrow West <span>Philadelphia, Pennsylvania</span></h1>
+         </div>
     </header>
 
-  <!-- Nav -->
-   <section class="nav">
-     <div class="container">
+  <!-- Search -->
+   <section class="search">
         <div class="content">
-           <input type="text" placeholder="Search our products">
-           <button>Search</button>
+          <form action="#">
+            <input type="text" placeholder="Search our products">
+            <button><img src="/deploy/img/svg/nav-search-icon.svg" class="search-button" alt="search icon"></button>
+          </form>
         </div>
-      </div>
   </section>
 
   <!-- Hero -->
    <section class="hero">
-     <div class="container">
-         <div class="content">
-            <img src="/deploy/img/images/hero1mask.jpg" alt="Large Plant Hero">
-         </div>
-     </div>
-   </section>
+      <img src="/deploy/img/images/hero1mask.jpg" alt="Large Plant Hero">
 
-  <!-- Divider -->
-   <section class="divider">
-     <div class="container">
-         <div class="content">
-            <div>
-               <h2>Have Questions?</h2> 
-                  <p>We would love to help, contact us here.</p>
-                  <p>Details</p>
-           </div>
-         </div>
-       </div>
-    </section>
-
-    <section class="divider">
-       <div class="container">
-             <div class="content">
-                <div>
-                  <h3>Location:</h3> <h4>Philadelphia,</h4> <h5>PA, USA</h5>
-                  <h3>Hours:</h3> <h4>Monday-Saturday,</h4> <h5>9-5 PM</h5>
-                 <p>Details</p>
+     <div class="hero-content">
+              <div class="sub-content-left container">
+                <div class="content">
+                  <h2>Have Questions?</h2> 
+                  <p>We would love to help, contact us here.</p> 
+                  <a href="#">Details <img src="/deploy/img/svg/details-arrow.svg" class="arrow" alt="arrow icon"></a>
                 </div>
              </div>
-        </div>
-     </section>
 
-<!-- Project -->
-  <section class="project">
-     <section class="project-container">
-         <article class="project1">
-           <h2>Planning your next project?</h2>
-           <a href="#">Start here</a>
-          <img src="/deploy/img/images/projectphoto1.jpg" alt="Cactus photo">
-       </article>
+              <div class="sub-content-right container">
+                  <div class="content">
+                     <p><span class="semi-bold">Location:</span> Philadelphia, PA, USA</p>
+                     <p><span class="semi-bold">Hours:</span> Monday-Saturday, 9-5 PM</p>
+                     <a href="#">Details <img src="/deploy/img/svg/details-arrow.svg" class="arrow" alt="arrow icon"></a>
+                   </div>
+               </div>
+       </div>
+   </section>
 
-     <article class="project2">
-        <h2>Need supplies?</h2>
-          <a href="#">Order here</a>
-          <img src="/deploy/img/images/projectphoto2.jpg" alt="Gardener photo">
-      </article>
-    </section>
+<!-- Divider -->
+  <section class="divider">
+     <div class="content">
+         <div class="sub-content">
+            <h2>Planning your next project?</h2>
+            <button>Start here<img src="/deploy/img/svg/start-here-button.svg" class="start-here" alt="start here"></button>
+            <img src="/deploy/img/images/projectphoto1.jpg" alt="Cactus photo">
+         </div>
+
+         <div class="sub-content">
+            <h2>Need supplies?</h2>
+            <button>Order here <img src="/deploy/img/svg/order-here-button.svg" class="order-here" alt="order here"></button>
+            <img src="/deploy/img/images/projectphoto2.jpg" alt="Gardener photo">
+         </div>
+      </div>
   </section>
 
 <!-- Gallery-->
@@ -101,13 +92,13 @@
 <!--Whats New-->
 <section class="whats-new">
 
-  <section class="whats-new-title">
-     <div class="container">
-        <div class="content">
-           <h2>What's New</h2>
+    <section class="whats-new-title">
+        <div class="container">
+            <div class="content">
+              <h2>What's New</h2>
+            </div>
         </div>
-     </div>
-  </section>
+   </section>
 
       <section class="whats-new-articles">
           <div class="article-grid">
@@ -119,7 +110,7 @@
                     <div class="content">
                        <h3>Flowers + Arrangements</h3>
                          <p>We are now offering an variety of potted flowers and arrangements. Arrangements can be customized in store or online.</p>
-                         <a href="#">Read more</a>
+                         <a href="#">Read more <img src="/deploy/img/svg/read-more-button.svg" class="read-more" alt="read more"></a>
                      </div>
                   </div>    
             </article>
@@ -130,7 +121,7 @@
                          <div class="content">
                             <h3>Build-a-Terrarium Workshops</h3>
                               <p>Build-a-terrarium workshops are now available. Kits include a glass bowl, three succulents, soil, and decorative moss, stones and embellishments.</p>
-                              <a href="#">Read more</a>
+                              <a href="#">Read more <img src="/deploy/img/svg/read-more-button.svg" class="read-more" alt="read more"></a>
                           </div>
                       </div>
             </article>
@@ -141,7 +132,7 @@
                       <div class="content">
                           <h3>Reserve for Private Events</h3>
                            <p>Have a birthday party or bridal shower coming up? Contact us via phone or email if you are interested in reserving a private party.</p>
-                           <a href="#">Read more</a>
+                           <a href="#">Read more <img src="/deploy/img/svg/read-more-button.svg" class="read-more" alt="read more"></a>
                       </div>
                     </div>
              </article>
@@ -152,7 +143,7 @@
                     <div class="content">
                         <h3>Educational Workshops</h3>
                          <p>Learn from experts on how to take care of your plants for plant lovers of all backgrounds and experience levels.</p>
-                         <a href="#">Read more</a>
+                         <a href="#">Read more <img src="/deploy/img/svg/read-more-button.svg" class="read-more" alt="read more"></a>
                      </div>
                   </div>
                </article>
@@ -163,7 +154,7 @@
                       <div class="content">
                          <h3>Our Sustainability Mission</h3>
                           <p>Through our partnership with Eden Reforestation Projects, we plant a tree for every purchase you make. So far, we’ve planted over 20,000 trees.</p>
-                          <a href="#">Read more</a>
+                          <a href="#">Read more <img src="/deploy/img/svg/read-more-button.svg" class="read-more" alt="read more"></a>
                         </div>
                      </div>
                 </article>
@@ -183,26 +174,26 @@
               <ul>
                    <li>
                      <h5>Connecticut</h5>
-                       <p><img src="/deploy/img/svg/location-arrow-icon.svg" alt="Location Arrow Icon"> <a href="#"></a></p>
+                       <p><img src="/deploy/img/svg/location-arrow-icon.svg" class="location-icon" alt="Location Arrow Icon"> <a href="#"></a></p>
                         <p>20 Tolland Turnpike Manchester, CT 06042-1763</p>
-                        <p><img src="/deploy/img/svg/phone-icon.svg" alt="Phone Icon"><a href="#"></a></p>
+                        <p><img src="/deploy/img/svg/phone-icon.svg" class="phone-icon" alt="Phone Icon"><a href="#"></a></p>
                         <p>(800) 829-4161</p>
                    </li>
 
                  <li>
                      <h5>Massachusetts</h5>
-                      <p><img src="/deploy/img/svg/location-arrow-icon.svg" alt="Location Arrow Icon"><a href="#"></a></p>
+                      <p><img src="/deploy/img/svg/location-arrow-icon.svg" class="location-icon" alt="Location Arrow Icon"><a href="#"></a></p>
                       <p>136 Eastman Street South Easton, MA 02375</p>
-                      <p><img src="/deploy/img/svg/phone-icon.svg" alt="Phone Icon"><a href="#"></a></p>
+                      <p><img src="/deploy/img/svg/phone-icon.svg" class="phone-icon" alt="Phone Icon"><a href="#"></a></p>
                       <p>(877) 526-9213</p>
                    </li>
 
 
                   <li>
                      <h5>Nova Scotia</h5>
-                     <p><img src="/deploy/img/svg/location-arrow-icon.svg" alt="Location Arrow Icon"><a href="#"></a></p>
+                     <p><img src="/deploy/img/svg/location-arrow-icon.svg" class="location-icon" alt="Location Arrow Icon"><a href="#"></a></p>
                      <p>318 Park Road Elmsdale, NS B2S 0G25</p>
-                     <p><img src="/deploy/img/svg/phone-icon.svg" alt="Phone Icon"><a href="#"></a></p>
+                     <p><img src="/deploy/img/svg/phone-icon.svg" class="phone-icon" alt="Phone Icon"><a href="#"></a></p>
                      <p>(902) 883-7450</p>
                    </li>
              </ul>

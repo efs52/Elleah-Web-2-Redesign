@@ -1,38 +1,64 @@
 /* =============
-    Sub-Content
+    Divider
 ============= */
 
 
 .divider{
-    .container{
-        .content{
-            display: grid;
-            // grid-template-columns: 17px auto 17px ;
-            grid-area:content;
 
-            h2{
-                font-family: 'Playfair Display';
-                font-weight: Bold;
-                font-size: 13px;
+    .content{
+        display:grid;
+        grid-template-columns: 100%;
+        gap: 15px;
+
+        @include md{
+            grid-template-columns: 50% auto;
+        }
+
+        .sub-content{
+            background-color: $lightsage;
+            color: white;
+            display:grid;
+            padding: 15px;
+            line-height: 26px;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+            "h2 image"
+            "button image"
+            ;
+        }
+
+        h2{
+            grid-area: h2;
+            font-family: 'Work Sans';
+            font-weight: 400;
+            font-size: 22px;
+            margin-left: 17px;
+
+            @include md{
+                font-size: 24px;
             }
-            h3{
-                font-family: 'Playfair Display';
-                font-weight: 600;
-                font-size: 13px;
+
+            @include lg{
+                font-size: 26px;
             }
 
-            h4{
-                font-family: 'Open Sans';
-                font-size: 11px;
-            }
-            p{
-                font-family: 'Work Sans';
-                font-weight: 400;
-                font-size: 10px;
-
-
-                }
+            @include xl{
+                font-size: 31px;
             }
         }
-    }
+
+        img{
+            grid-area: image;
+            border-radius: 100px;
+            margin-left: 80px;
+        }
+
+        a{
+            .start-here .order-here{
+                grid-area: button;
+                border-radius: 0px;
+            }
+        }
+    } 
+}
 

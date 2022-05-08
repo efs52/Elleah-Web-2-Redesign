@@ -3,53 +3,70 @@
 ============= */
 
 header{
+    background-color: #173726;
+    color: white;
 
-    .content{
-        background-color: #173726;
-        color: white;
-        display:grid;
-        grid-template-columns: 50% 50%;
-
-        .site-logo{
-            width:37px;
-            margin: 0;
-            text-align: center;
-            padding-top: 15px;
-            padding-bottom: 15px;
-
-            @include md{
-                width: 33px;
-            }
-
-            @include lg{
-                width: 39px;
-            }
-
-            @include xl{
-                width: 48px;
-            }
-        }
-
-        h1{
-            display: none;
-            font-weight: 600;
-            color: $lightpeach;
-
-            @include md{
+        .content{
+            
+            .site-logo{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                width:37px;
                 display: block;
-                font-size: 31px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                   
+
+                @include md{
+                width: 33px;
+                margin-left: 30px;
+                margin-top: 20px;
+                }
+
+                @include lg{
+                width: 40px;
+                margin-left: 45px;
+                margin-top: 25px;
+                }
+
+                @include xl{
+                width: 50px;
+                margin-left: 45px;
+                margin-top: 15px;
+                }
             }
 
-            @include lg{
-                font-size: 36px;
-            }
+            h1{
+                display: none;
+                font-weight: 600;
+                color: white;
+                font-family: 'Playfair Display';
 
-            @include xl{
-                font-size: 40px;
+                @include md{
+                    display: inline-block;
+                    font-size: 31px;
+                }
+
+                @include lg{
+                    font-size: 36px;
+                }
+
+                @include xl{
+                    font-size: 40px;
+                }
             }
 
             span{
+                display: none;
                 font-size: 10px;
+                color: $lightpeach;
+                font-style: 'Work Sans';
+                font-weight: 'Regular';
+
+                @include md{
+                    display: block;
+                }
 
                 @include lg{
                     font-size: 12px;
@@ -60,8 +77,7 @@ header{
                 }
             }
         }
-    }
-}
+    }   
   
 
  

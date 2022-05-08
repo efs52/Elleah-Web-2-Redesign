@@ -11,6 +11,14 @@
                 list-style: none;
                 padding:0;
 
+                .g1{
+                    margin-top: 37px;
+                }
+
+                .g3{
+                    display: none;
+                }
+
                 @include md{
                     display: grid;
                     grid-template-columns: 50% auto;
@@ -21,6 +29,9 @@
                 }
 
                 @include xl{
+                    .g3{
+                        display: block;
+                    }
                     grid-template-areas:
                     "g1 g2"
                     "g1 g3";

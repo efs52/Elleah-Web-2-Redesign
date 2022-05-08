@@ -3,11 +3,31 @@
 ============= */
 
 .whats-new{
-    .whats-new-articles{
 
-        img{
-            width:100%
+    .whats-new-title{
+        h2{
+            font-family: 'Playfair Display';
+            font-weight: 500;
+            font-size: 22px;
+            color: $forestgreen;
+            letter-spacing: 0.5px;
+
+            @include md{
+                font-size: 32px;
+            }
+
+            @include lg{
+                font-size: 36px;
+            }
+
+            @include xl{
+                font-size: 39px;
+            }
         }
+    }
+
+
+    .whats-new-articles{
 
         @include md{
             display: grid;
@@ -19,7 +39,7 @@
             grid-template-columns: auto 1140px auto
         }
 
-          .article-grid{
+        .article-grid{
             display: grid;
             grid-template-columns: 100%;
             gap:15px;
@@ -34,9 +54,80 @@
                 "a3 a3 a4 a4"
                 " . a5 a5 . ";
             }
+
+            @include lg{
+                grid-template-columns: repeat(6,1fr);
+                grid-template-areas:
+                "a1 a1 a2 a2 a3 a3"
+                ". a4 a4 a5 a5 .";
+            }
+
+            article{
+                background-color: $lightsage;
+                color: white;
+            }
+
+            img{
+                display:block;
+                width:100%
+            }
+
+            .container{
+
+                @include xl{
+                    grid-template-columns: 15px auto 15px;
+                }
+            }
+
+            h3{
+                font-family: 'Playfair Display';
+                font-weight: 600;
+                font-size: 26px;
+                margin-left: 17px;
+                margin-right: 17px;
+            }
+
+            &.article-1{
+                @include md{
+                    grid-area: a1;
+                }
+            }
+
+            &.article-2{
+                @include md{
+                    grid-area: a2;
+                }
+            }
+
+            &.article-3{
+                @include md{
+                    grid-area: a3;
+                }
+            }
+
+            &.article-5{
+                @include md{
+                    grid-area: a5;
+                }
+            }
+
+            p{
+                font-family: 'Open Sans';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                margin-left: 17px;
+                margin-right: 17px;
+            }
+
+            .read-more{
+                width: 99px;
+                margin-left: 33px;
+            }
+
+            a{
+                margin-left: 33px;
+            }
         }
-
-        
-
     }
 }

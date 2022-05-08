@@ -1,0 +1,55 @@
+/* =============
+    Search
+============= */
+
+
+
+.search{
+    margin: 15px 0 15px 0;
+
+    .content{
+
+        form{
+
+            display: flex;
+            padding: 20px;
+
+            input{
+                background-color: $seafoamBG;
+                font-size: 18px;
+                font-weight: 300;
+                font-family: 'Work Sans';
+                color: $search;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #333D2A;
+                margin-right: 20px;
+        
+                @include md{
+                    font-size: 20px;
+                }
+        
+                @include lg{
+                    font-size: 22px;
+                }
+        
+                @include xl{
+                    font-size: 24px;
+                }
+            }
+
+            ::placeholder{
+                color: $lightsage;
+            }
+            ::-ms-input-placeholder{
+                color: $lightsage;
+            }
+
+            button{
+                background-color: $lightpeach;
+                border: none;
+                border-radius: 4px;
+            }
+        }
+    }
+}

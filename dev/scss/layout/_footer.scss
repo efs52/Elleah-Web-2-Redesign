@@ -5,7 +5,7 @@
 footer{
 
     background-color: $bone;
-    text-decoration-color: $forestgreen;
+    color: $forestgreen;
     
     
     .content{
@@ -25,26 +25,49 @@ footer{
                 grid-template-areas:
                 "locations newsletter social";
             }
+
+            h4{
+                font-family: 'Playfair Display';
+                font-size: 20px;
+                font-weight: 600;
+            }
     
             .locations, .follow{
                 ul{
                     list-style: none;
                     padding:0;
+
+                    h5{
+                       font-size: 16px;
+                       font-family: 'Open Sans';
+                       font-weight: 600;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
                 }
+                
             }
             .locations{
                 @include md{
                     grid-area: locations;
                 }
             }
+
             .newsletter{
                 @include md{
                     grid-area: newsletter;
                 }
             }
+
             .follow{
                 @include md{
                     grid-area: follow;
+                }
+                li{
+                    display: inline;
                 }
             }
         }   

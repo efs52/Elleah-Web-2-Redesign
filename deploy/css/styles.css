@@ -354,6 +354,8 @@ template {
 ============= */
 body {
   background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 body .container {
   display: grid;
@@ -384,6 +386,12 @@ body h4 {
   font-family: "Open Sans";
   font-size: 16px;
 }
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin: 0;
+}
+body p {
+  margin: 0;
+}
 
 /* =============
     Buttons
@@ -412,42 +420,49 @@ textarea {
 /* =============
     Header
 ============= */
-header .content {
+header {
   background-color: #173726;
   color: white;
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 header .content .site-logo {
-  width: 37px;
-  margin: 0;
-  text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  width: 37px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 @media (min-width: 768px) {
   header .content .site-logo {
     width: 33px;
+    margin-left: 30px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 992px) {
   header .content .site-logo {
-    width: 39px;
+    width: 40px;
+    margin-left: 45px;
+    margin-top: 25px;
   }
 }
 @media (min-width: 1200px) {
   header .content .site-logo {
-    width: 48px;
+    width: 50px;
+    margin-left: 45px;
+    margin-top: 15px;
   }
 }
 header .content h1 {
   display: none;
   font-weight: 600;
-  color: #fae4d3;
+  color: white;
+  font-family: "Playfair Display";
 }
 @media (min-width: 768px) {
   header .content h1 {
-    display: block;
+    display: inline-block;
     font-size: 31px;
   }
 }
@@ -461,16 +476,25 @@ header .content h1 {
     font-size: 40px;
   }
 }
-header .content h1 span {
+header .content span {
+  display: none;
   font-size: 10px;
+  color: #fae4d3;
+  font-style: "Work Sans";
+  font-weight: "Regular";
+}
+@media (min-width: 768px) {
+  header .content span {
+    display: block;
+  }
 }
 @media (min-width: 992px) {
-  header .content h1 span {
+  header .content span {
     font-size: 12px;
   }
 }
 @media (min-width: 1200px) {
-  header .content h1 span {
+  header .content span {
     font-size: 13px;
   }
 }
@@ -480,7 +504,7 @@ header .content h1 span {
 ============= */
 footer {
   background-color: #e2e2db;
-  text-decoration-color: #173726;
+  color: #173726;
 }
 footer .content {
   display: grid;
@@ -499,9 +523,23 @@ footer .content {
     grid-template-areas: "locations newsletter social";
   }
 }
+footer .content h4 {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: 600;
+}
 footer .content .locations ul, footer .content .follow ul {
   list-style: none;
   padding: 0;
+}
+footer .content .locations ul h5, footer .content .follow ul h5 {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+footer .content .locations ul p, footer .content .follow ul p {
+  font-size: 14px;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   footer .content .locations {
@@ -518,68 +556,191 @@ footer .content .locations ul, footer .content .follow ul {
     grid-area: follow;
   }
 }
+footer .content .follow li {
+  display: inline;
+}
 
 /* =============
-    Nav
+    Search
 ============= */
-.nav .container {
-  display: grid;
-  grid-template-columns: 17px auto 17px;
-  grid-template-areas: ". content .";
+.search {
+  margin: 15px 0 15px 0;
 }
-.nav .container .content {
-  grid-area: content;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.search .content form {
+  display: flex;
+  padding: 20px;
+}
+.search .content form input {
+  background-color: #f8f9fa;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Work Sans";
+  color: #646D46;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333D2A;
+  margin-right: 20px;
+}
+@media (min-width: 768px) {
+  .search .content form input {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .search .content form input {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .search .content form input {
+    font-size: 24px;
+  }
+}
+.search .content form ::placeholder {
+  color: #b7b7a5;
+}
+.search .content form ::-ms-input-placeholder {
+  color: #b7b7a5;
+}
+.search .content form button {
+  background-color: #fae4d3;
+  border: none;
+  border-radius: 4px;
 }
 
 /* =============
     Hero
 ============= */
-.hero .container .content img {
+.hero img {
   width: 100%;
+  display: block;
 }
-
-/* =============
-    Sub-Content
-============= */
-.divider .container .content {
+.hero .hero-content {
   display: grid;
-  grid-area: content;
+  grid-template-columns: 100%;
+  color: white;
 }
-.divider .container .content h2 {
-  font-family: "Playfair Display";
-  font-weight: Bold;
-  font-size: 13px;
+@media (min-width: 768px) {
+  .hero .hero-content {
+    grid-template-columns: 50% auto;
+  }
 }
-.divider .container .content h3 {
-  font-family: "Playfair Display";
-  font-weight: 600;
-  font-size: 13px;
-}
-.divider .container .content h4 {
-  font-family: "Open Sans";
-  font-size: 11px;
-}
-.divider .container .content p {
+.hero a {
+  text-decoration: none;
+  color: white;
   font-family: "Work Sans";
   font-weight: 400;
-  font-size: 10px;
+  font-size: 14px;
+  display: flex;
+  padding: 17px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+}
+.hero .sub-content-left {
+  background-color: #6B705D;
+  padding: 20px;
+}
+@media (min-width: 1200px) {
+  .hero .sub-content-left {
+    grid-template-columns: auto auto 16px;
+  }
+}
+.hero .sub-content-left h2 {
+  font-family: "Playfair Display";
+  font-weight: Bold;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  margin-bottom: 15px;
+}
+.hero .sub-content-left p {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+.hero .sub-content-right {
+  background-color: #b7b7a5;
+  padding: 20px;
+  margin-bottom: 37px;
+}
+@media (min-width: 1200px) {
+  .hero .sub-content-right {
+    grid-template-columns: 16px auto auto;
+  }
+}
+.hero .arrow {
+  width: 6px;
+  margin-left: 10px;
+}
+@media (min-width: 1200px) {
+  .hero .arrow {
+    width: 8px;
+  }
+}
+.hero p {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.hero span {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.75px;
 }
 
 /* =============
-    Project
+    Divider
 ============= */
-.project .project-container {
+.divider .content {
   display: grid;
+  grid-template-columns: 100%;
+  gap: 15px;
+}
+@media (min-width: 768px) {
+  .divider .content {
+    grid-template-columns: 50% auto;
+  }
+}
+.divider .content .sub-content {
+  background-color: #b7b7a5;
+  color: white;
+  display: grid;
+  padding: 15px;
+  line-height: 26px;
   grid-template-columns: 50% 50%;
+  grid-template-areas: "h2 image" "button image";
 }
-.project .project-container .project1 {
-  background-color: #B7B7A5;
+.divider .content h2 {
+  grid-area: h2;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 17px;
 }
-.project .project-container .project2 {
-  background-color: #B7B7A5;
+@media (min-width: 768px) {
+  .divider .content h2 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .divider .content h2 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .divider .content h2 {
+    font-size: 31px;
+  }
+}
+.divider .content img {
+  grid-area: image;
+  border-radius: 100px;
+  margin-left: 80px;
+}
+.divider .content a .start-here .order-here {
+  grid-area: button;
+  border-radius: 0px;
 }
 
 /* =============
@@ -591,6 +752,12 @@ footer .content .locations ul, footer .content .follow ul {
 .gallery .container .content ul {
   list-style: none;
   padding: 0;
+}
+.gallery .container .content ul .g1 {
+  margin-top: 37px;
+}
+.gallery .container .content ul .g3 {
+  display: none;
 }
 @media (min-width: 768px) {
   .gallery .container .content ul {
@@ -607,6 +774,9 @@ footer .content .locations ul, footer .content .follow ul {
   .gallery .container .content ul {
     grid-template-areas: "g1 g2" "g1 g3";
   }
+  .gallery .container .content ul .g3 {
+    display: block;
+  }
 }
 .gallery .container .content ul li img {
   width: 100%;
@@ -615,8 +785,27 @@ footer .content .locations ul, footer .content .follow ul {
 /* =============
     Whats New
 ============= */
-.whats-new .whats-new-articles img {
-  width: 100%;
+.whats-new .whats-new-title h2 {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 22px;
+  color: #173726;
+  letter-spacing: 0.5px;
+}
+@media (min-width: 768px) {
+  .whats-new .whats-new-title h2 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .whats-new .whats-new-title h2 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .whats-new .whats-new-title h2 {
+    font-size: 39px;
+  }
 }
 @media (min-width: 768px) {
   .whats-new .whats-new-articles {
@@ -642,4 +831,65 @@ footer .content .locations ul, footer .content .follow ul {
     grid-area: articles;
     grid-template-areas: "a1 a1 a2 a2" "a3 a3 a4 a4" " . a5 a5 . ";
   }
+}
+@media (min-width: 992px) {
+  .whats-new .whats-new-articles .article-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "a1 a1 a2 a2 a3 a3" ". a4 a4 a5 a5 .";
+  }
+}
+.whats-new .whats-new-articles .article-grid article {
+  background-color: #b7b7a5;
+  color: white;
+}
+.whats-new .whats-new-articles .article-grid img {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .whats-new .whats-new-articles .article-grid .container {
+    grid-template-columns: 15px auto 15px;
+  }
+}
+.whats-new .whats-new-articles .article-grid h3 {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 26px;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+@media (min-width: 768px) {
+  .whats-new .whats-new-articles .article-grid.article-1 {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  .whats-new .whats-new-articles .article-grid.article-2 {
+    grid-area: a2;
+  }
+}
+@media (min-width: 768px) {
+  .whats-new .whats-new-articles .article-grid.article-3 {
+    grid-area: a3;
+  }
+}
+@media (min-width: 768px) {
+  .whats-new .whats-new-articles .article-grid.article-5 {
+    grid-area: a5;
+  }
+}
+.whats-new .whats-new-articles .article-grid p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+.whats-new .whats-new-articles .article-grid .read-more {
+  width: 99px;
+  margin-left: 33px;
+}
+.whats-new .whats-new-articles .article-grid a {
+  margin-left: 33px;
 }
