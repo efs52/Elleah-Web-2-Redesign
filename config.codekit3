@@ -9,6 +9,19 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
+    "\/assets\/images\/CROPPED-HERO1.jpg" : {
+      "ft" : 16384,
+      "iS" : 4602781,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/CROPPED-HERO1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/croppedhero3.jpg" : {
       "ft" : 16384,
       "iS" : 152910,
@@ -126,7 +139,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/images\/pexels-oziel-gómez-837267.jpg" : {
+    "\/assets\/images\/pexels-oziel-gómez-837267.jpg" : {
       "ft" : 16384,
       "iS" : 545678,
       "jF" : 0,
@@ -414,6 +427,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/images\/CROPPED-HERO-plant-pot.jpg" : {
+      "ft" : 16384,
+      "iS" : 11907236,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/images\/CROPPED-HERO-plant-pot.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/images\/CROPPED-HERO1.jpg" : {
+      "ft" : 16384,
+      "iS" : 4602781,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/images\/CROPPED-HERO1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/images\/CROPPED-WHATS_NEW-UNO.jpg" : {
+      "ft" : 16384,
+      "iS" : 4346111,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/images\/CROPPED-WHATS_NEW-UNO.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/images\/croppedhero3.jpg" : {
       "ft" : 16384,
       "iS" : 152910,
@@ -531,7 +583,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/images\/pexels-oziel-gómez-837267.jpg" : {
+    "\/deploy\/img\/images\/pexels-oziel-gómez-837267.jpg" : {
       "ft" : 16384,
       "iS" : 545678,
       "jF" : 0,
