@@ -3,16 +3,15 @@
 ============= */
 
 .gallery{
-    .container{
-        .content{
-            display: grid;
+
+    display: flex;
 
             ul{
                 list-style: none;
                 padding:0;
 
                 .g1{
-                    margin-top: 37px;
+                    display: flex;
                 }
 
                 .g3{
@@ -25,7 +24,7 @@
                 }
 
                 @include lg{
-                    grid-template-columns: 60% auto
+                    grid-template-columns: 60% auto;
                 }
 
                 @include xl{
@@ -42,9 +41,7 @@
                         width:100%;
                     }
                 }
-
-
+            
             }
-        }   
-    }
+
 }

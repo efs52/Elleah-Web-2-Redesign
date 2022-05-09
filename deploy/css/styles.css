@@ -784,39 +784,39 @@ footer .content .follow li {
 /* =============
     Gallery
 ============= */
-.gallery .container .content {
-  display: grid;
+.gallery {
+  display: flex;
 }
-.gallery .container .content ul {
+.gallery ul {
   list-style: none;
   padding: 0;
 }
-.gallery .container .content ul .g1 {
-  margin-top: 37px;
+.gallery ul .g1 {
+  display: flex;
 }
-.gallery .container .content ul .g3 {
+.gallery ul .g3 {
   display: none;
 }
 @media (min-width: 768px) {
-  .gallery .container .content ul {
+  .gallery ul {
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 992px) {
-  .gallery .container .content ul {
+  .gallery ul {
     grid-template-columns: 60% auto;
   }
 }
 @media (min-width: 1200px) {
-  .gallery .container .content ul {
+  .gallery ul {
     grid-template-areas: "g1 g2" "g1 g3";
   }
-  .gallery .container .content ul .g3 {
+  .gallery ul .g3 {
     display: block;
   }
 }
-.gallery .container .content ul li img {
+.gallery ul li img {
   width: 100%;
 }
 
