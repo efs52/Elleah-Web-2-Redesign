@@ -425,19 +425,21 @@ header {
   color: white;
 }
 header .content .site-logo {
+  display: block;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 37px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
 }
 @media (min-width: 768px) {
   header .content .site-logo {
+    display: inline-block;
     width: 33px;
     margin-left: 30px;
     margin-top: 20px;
+    padding-bottom: 1px;
   }
 }
 @media (min-width: 992px) {
@@ -464,6 +466,7 @@ header .content h1 {
   header .content h1 {
     display: inline-block;
     font-size: 32px;
+    padding: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -486,6 +489,7 @@ header .content span {
 @media (min-width: 768px) {
   header .content span {
     display: block;
+    padding-top: 5px;
   }
 }
 @media (min-width: 992px) {
@@ -508,13 +512,11 @@ footer {
 }
 footer .content {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 33% 33% 33%;
   padding: 20px;
 }
 @media (min-width: 768px) {
   footer .content {
-    display: grid;
-    grid-template-columns: 50% auto;
     grid-template-areas: "locations newsletter" "locations social";
   }
 }
@@ -533,6 +535,7 @@ footer .content h4 {
 footer .content .locations ul, footer .content .follow ul {
   list-style: none;
   padding: 0;
+  display: inline-block;
 }
 footer .content .locations ul h5, footer .content .follow ul h5 {
   font-size: 16px;
@@ -548,6 +551,9 @@ footer .content .locations ul p, footer .content .follow ul p {
 }
 footer .content .locations ul .location-icon, footer .content .locations ul .phone-icon, footer .content .follow ul .location-icon, footer .content .follow ul .phone-icon {
   display: inline-block;
+}
+footer .content .locations .border-bottom {
+  border-bottom: 2px solid white;
 }
 @media (min-width: 768px) {
   footer .content .locations {
@@ -864,7 +870,6 @@ footer .content .follow li {
   display: grid;
   grid-template-columns: 100%;
   gap: 15px;
-  padding-bottom: 100px;
 }
 @media (min-width: 768px) {
   .whats-new .whats-new-articles .article-grid {
@@ -884,16 +889,16 @@ footer .content .follow li {
   background-color: #b7b7a5;
   color: white;
 }
-.whats-new .whats-new-articles .article-grid img {
+.whats-new .whats-new-articles .article-grid article img {
   display: block;
   width: 100%;
 }
 @media (min-width: 1200px) {
-  .whats-new .whats-new-articles .article-grid .container {
+  .whats-new .whats-new-articles .article-grid article .container {
     grid-template-columns: 15px auto 15px;
   }
 }
-.whats-new .whats-new-articles .article-grid h3 {
+.whats-new .whats-new-articles .article-grid article .container h3 {
   font-family: "Playfair Display";
   font-weight: 600;
   font-size: 26px;
@@ -901,26 +906,26 @@ footer .content .follow li {
   padding-left: 10px;
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles .article-grid.article-1 {
+  .whats-new .whats-new-articles .article-grid article.article-1 {
     grid-area: a1;
   }
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles .article-grid.article-2 {
+  .whats-new .whats-new-articles .article-grid article.article-2 {
     grid-area: a2;
   }
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles .article-grid.article-3 {
+  .whats-new .whats-new-articles .article-grid article.article-3 {
     grid-area: a3;
   }
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles .article-grid.article-5 {
+  .whats-new .whats-new-articles .article-grid article.article-5 {
     grid-area: a5;
   }
 }
-.whats-new .whats-new-articles .article-grid p {
+.whats-new .whats-new-articles .article-grid article p {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
@@ -928,7 +933,7 @@ footer .content .follow li {
   padding: 10px;
   padding-bottom: 60px;
 }
-.whats-new .whats-new-articles .article-grid button {
+.whats-new .whats-new-articles .article-grid article button {
   margin-left: 33px;
   color: #173726;
   background-color: #fae4d3;

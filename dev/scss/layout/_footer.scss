@@ -10,12 +10,10 @@ footer{
     
     .content{
             display:grid;
-            grid-template-columns: 100%;
+            grid-template-columns: 33% 33% 33%;
             padding: 20px;
     
             @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
                 grid-template-areas:
                 "locations newsletter"
                 "locations social";
@@ -33,11 +31,13 @@ footer{
                 font-weight: 600;
                 padding-top: 30px;
             }
+
     
             .locations, .follow{
                 ul{
                     list-style: none;
                     padding:0;
+                    display: inline-block;
 
                     h5{
                        font-size: 16px;
@@ -56,10 +56,15 @@ footer{
                     .location-icon, .phone-icon{
                         display: inline-block;
                     }
+
                 }
                 
             }
             .locations{
+                .border-bottom{
+                    border-bottom: 2px solid white;
+    
+                }
                 @include md{
                     grid-area: locations;
                 }
@@ -109,6 +114,8 @@ footer{
                     display: inline;
                     padding: 10px;
                 }
+
+
             }
         }   
     
