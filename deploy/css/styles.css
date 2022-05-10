@@ -512,18 +512,20 @@ footer {
 }
 footer .content {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  padding: 20px;
+  grid-template-columns: 100%;
+  margin: 30px;
 }
 @media (min-width: 768px) {
   footer .content {
-    grid-template-areas: "locations newsletter" "locations social";
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "locations newsletter" "locations follow";
   }
 }
 @media (min-width: 992px) {
   footer .content {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "locations newsletter social";
+    grid-template-areas: "locations newsletter follow";
   }
 }
 footer .content h4 {
@@ -554,15 +556,28 @@ footer .content .locations ul .location-icon, footer .content .locations ul .pho
 }
 footer .content .locations .border-bottom {
   border-bottom: 2px solid white;
+  padding: 10px;
+}
+footer .content .locations .border-bottom p {
+  display: inline-block;
 }
 @media (min-width: 768px) {
   footer .content .locations {
     grid-area: locations;
+    margin-left: 10px;
   }
+}
+@media (min-width: 992px) {
+  footer .content .locations {
+    margin-left: 50px;
+  }
+}
+footer .content .locations .border-bottom-3 {
+  border-bottom: 0px solid #b7b7a5;
 }
 footer .content .newsletter form {
   display: flex;
-  padding: 20px;
+  padding: 20px 10px 20px 0px;
 }
 footer .content .newsletter form input {
   width: 100%;
@@ -573,6 +588,30 @@ footer .content .newsletter form input {
   font-weight: 600;
   padding: 15px;
 }
+@media (min-width: 768px) {
+  footer .content .newsletter form {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  footer .content .newsletter form {
+    margin-left: 30px;
+    padding-top: 40px;
+  }
+}
+footer .content .newsletter h4 {
+  margin-left: 0px;
+}
+@media (min-width: 768px) {
+  footer .content .newsletter h4 {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  footer .content .newsletter h4 {
+    margin-left: 29px;
+  }
+}
 footer .content .newsletter button {
   background-color: #173726;
   font-family: "Work Sans";
@@ -582,6 +621,22 @@ footer .content .newsletter button {
   border: none;
   width: 90px;
   padding: 10px 0 10px 0;
+  margin-left: 255px;
+}
+@media (min-width: 768px) {
+  footer .content .newsletter button {
+    margin-left: 280px;
+  }
+}
+@media (min-width: 992px) {
+  footer .content .newsletter button {
+    margin-left: 235px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .content .newsletter button {
+    margin-left: 311px;
+  }
 }
 @media (min-width: 768px) {
   footer .content .newsletter {
@@ -591,11 +646,39 @@ footer .content .newsletter button {
 @media (min-width: 768px) {
   footer .content .follow {
     grid-area: follow;
+    margin-left: 23px;
   }
 }
-footer .content .follow li {
+@media (min-width: 992px) {
+  footer .content .follow {
+    margin-left: 100px;
+  }
+}
+footer .content .follow ul {
+  padding-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  footer .content .follow ul {
+    margin-left: 30px;
+  }
+}
+footer .content .follow ul li {
   display: inline;
-  padding: 10px;
+  padding: 5px;
+}
+footer .content .follow h4 {
+  margin-left: 0px;
+}
+@media (min-width: 992px) {
+  footer .content .follow h4 {
+    margin-left: 50px;
+    padding-bottom: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .content .follow h4 {
+    margin-left: 80px;
+  }
 }
 
 /* =============
@@ -676,6 +759,7 @@ footer .content .follow li {
 .hero .sub-content-left {
   background-color: #6B705D;
   padding: 20px;
+  margin-bottom: 37px;
 }
 @media (min-width: 1200px) {
   .hero .sub-content-left {
@@ -792,16 +876,76 @@ footer .content .follow li {
 ============= */
 .gallery {
   display: flex;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
 }
 .gallery ul {
   list-style: none;
-  padding: 0;
+  padding-top: 30px;
+}
+.gallery ul img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .gallery ul {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery ul {
+    display: flex;
+    width: 100%;
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
 }
 .gallery ul .g1 {
-  display: flex;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .gallery ul .g1 {
+    margin: -20px;
+    transform: rotate(270deg);
+    width: 154%;
+  }
+}
+@media (min-width: 992px) {
+  .gallery ul .g1 {
+    width: 103%;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery ul .g1 {
+    width: 100%;
+    transform: rotate(360deg);
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
+.gallery ul .g2 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .gallery ul .g2 {
+    padding-right: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery ul .g2 {
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
 }
 .gallery ul .g3 {
   display: none;
+}
+@media (min-width: 1200px) {
+  .gallery ul .g3 {
+    display: flex;
+    align-items: center;
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
 }
 @media (min-width: 768px) {
   .gallery ul {
@@ -818,12 +962,6 @@ footer .content .follow li {
   .gallery ul {
     grid-template-areas: "g1 g2" "g1 g3";
   }
-  .gallery ul .g3 {
-    display: block;
-  }
-}
-.gallery ul li img {
-  width: 100%;
 }
 
 /* =============
@@ -870,11 +1008,16 @@ footer .content .follow li {
   display: grid;
   grid-template-columns: 100%;
   gap: 15px;
+  padding: 30px;
+}
+.whats-new .whats-new-articles .article-grid img {
+  display: block;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .whats-new .whats-new-articles .article-grid {
     display: grid;
-    grid-template-columns: repeat 4, 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-area: articles;
     grid-template-areas: "a1 a1 a2 a2" "a3 a3 a4 a4" " . a5 a5 . ";
   }
@@ -905,6 +1048,26 @@ footer .content .follow li {
   padding-top: 20px;
   padding-left: 10px;
 }
+.whats-new .whats-new-articles .article-grid article .container p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+  padding-bottom: 60px;
+}
+.whats-new .whats-new-articles .article-grid article .container button {
+  margin-left: 33px;
+  color: #173726;
+  background-color: #fae4d3;
+  padding: 8px;
+  width: 130px;
+  border: none;
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   .whats-new .whats-new-articles .article-grid article.article-1 {
     grid-area: a1;
@@ -921,27 +1084,12 @@ footer .content .follow li {
   }
 }
 @media (min-width: 768px) {
+  .whats-new .whats-new-articles .article-grid article.article-4 {
+    grid-area: a4;
+  }
+}
+@media (min-width: 768px) {
   .whats-new .whats-new-articles .article-grid article.article-5 {
     grid-area: a5;
   }
-}
-.whats-new .whats-new-articles .article-grid article p {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 10px;
-  padding-bottom: 60px;
-}
-.whats-new .whats-new-articles .article-grid article button {
-  margin-left: 33px;
-  color: #173726;
-  background-color: #fae4d3;
-  padding: 8px;
-  width: 130px;
-  border: none;
-  font-family: "Work Sans";
-  font-weight: 500;
-  font-size: 16px;
-  margin-bottom: 30px;
 }

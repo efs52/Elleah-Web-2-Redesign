@@ -5,17 +5,84 @@
 .gallery{
 
     display: flex;
+    width: 100%;
+
+    @include xl{
+        grid-template-areas:
+        "g1 g2"
+        "g1 g3";
+    }
 
             ul{
                 list-style: none;
-                padding:0;
+                padding-top: 30px;
+                
+                
+
+                img{
+                    width:100%;
+                }
+
+                @include md{
+                    padding-top: 30px;
+                }
+
+                @include xl{
+                        display: flex;
+                        width: 100%;
+                        grid-template-areas:
+                        "g1 g2"
+                        "g1 g3";
+                    }
 
                 .g1{
-                    display: flex;
+
+                    width:100%;
+
+                    @include md{
+                        margin: -20px;
+                        transform: rotate(270deg);
+                        width: 154%;
+                    }
+
+                    @include lg{
+                        width: 103%;
+                    }
+
+                    @include xl{
+                        width: 100%;
+                        transform: rotate(360deg);
+                        grid-template-areas:
+                        "g1 g2"
+                        "g1 g3";
+                    }
+                }
+
+                .g2{
+                    width: 100%;
+
+                    @include md{
+                        padding-right: 0px;
+
+                    }
+                    @include xl{
+                        grid-template-areas:
+                        "g1 g2"
+                        "g1 g3";
+                    }
                 }
 
                 .g3{
                     display: none;
+
+                    @include xl{
+                        display: flex;
+                        align-items: center;
+                        grid-template-areas:
+                        "g1 g2"
+                        "g1 g3";
+                    }
+
                 }
 
                 @include md{
@@ -28,18 +95,9 @@
                 }
 
                 @include xl{
-                    .g3{
-                        display: block;
-                    }
                     grid-template-areas:
                     "g1 g2"
                     "g1 g3";
-                }
-
-                li{
-                    img{
-                        width:100%;
-                    }
                 }
             
             }

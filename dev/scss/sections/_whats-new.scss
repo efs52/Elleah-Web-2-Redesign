@@ -48,10 +48,16 @@
             display: grid;
             grid-template-columns: 100%;
             gap:15px;
+            padding: 30px;
+
+            img{
+                display:block;
+                width:100%;
+            }
 
             @include md{
                 display: grid;
-                grid-template-columns: repeat (4,1fr);
+                grid-template-columns: repeat(4,1fr);
                 grid-area: articles;
 
                 grid-template-areas:
@@ -89,6 +95,30 @@
                         padding-top: 20px;
                         padding-left: 10px;
                     }
+
+                    p{
+                        font-family: 'Open Sans';
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        padding: 10px;
+                        padding-bottom: 60px;
+                    }
+        
+        
+                    button{
+                        margin-left: 33px;
+                        color: $forestgreen;
+                        background-color: $lightpeach;
+                        padding: 8px;
+                        width: 130px;
+                        border: none;
+                        font-family: "Work Sans";
+                        font-weight: 500;
+                        font-size: 16px;
+                        margin-bottom: 30px;
+        
+                    }
                 }
     
     
@@ -109,6 +139,12 @@
                         grid-area: a3;
                     }
                 }
+
+                &.article-4{
+                    @include md{
+                        grid-area: a4;
+                    }
+                }
     
                 &.article-5{
                     
@@ -116,33 +152,7 @@
                         grid-area: a5;
                     }
                 }
-    
-                p{
-                    font-family: 'Open Sans';
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 22px;
-                    padding: 10px;
-                    padding-bottom: 60px;
-                }
-    
-    
-                button{
-                    margin-left: 33px;
-                    color: $forestgreen;
-                    background-color: $lightpeach;
-                    padding: 8px;
-                    width: 130px;
-                    border: none;
-                    font-family: "Work Sans";
-                    font-weight: 500;
-                    font-size: 16px;
-                    margin-bottom: 30px;
-    
-                }
             }
-
-            
         }
     }
 }
