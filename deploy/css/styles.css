@@ -1010,10 +1010,6 @@ footer .content .follow h4 {
   gap: 15px;
   padding: 30px;
 }
-.whats-new .whats-new-articles .article-grid img {
-  display: block;
-  width: 100%;
-}
 @media (min-width: 768px) {
   .whats-new .whats-new-articles .article-grid {
     display: grid;
