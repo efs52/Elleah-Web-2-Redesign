@@ -4,9 +4,6 @@
 
 .gallery{
 
-    display: flex;
-    width: 100%;
-
     @include xl{
         grid-template-areas:
         "g1 g2"
@@ -15,9 +12,9 @@
 
             ul{
                 list-style: none;
-                padding-top: 30px;
-                
-                
+                margin: 0px;
+                padding: 0px;
+                padding-top: 45px;
 
                 img{
                     width:100%;
@@ -36,7 +33,6 @@
                     }
 
                 .g1{
-
                     width:100%;
 
                     @include md{

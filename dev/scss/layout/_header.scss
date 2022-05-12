@@ -44,6 +44,7 @@ header{
                 font-weight: 600;
                 color: white;
                 font-family: 'Playfair Display';
+                letter-spacing: 0.5px;
 
                 @include md{
                     display: inline-block;
@@ -64,8 +65,9 @@ header{
                 display: none;
                 font-size: 10px;
                 color: $lightpeach;
-                font-style: 'Work Sans';
-                font-weight: 'Regular';
+                font-family: 'Work Sans';
+                font-weight: 400;
+                letter-spacing: 0.3px;
 
                 @include md{
                     display: block;

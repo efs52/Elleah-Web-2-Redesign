@@ -357,6 +357,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body h1, body h3, body h4, body h5, body h6 {
+  margin: 0;
+}
 body .container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -461,6 +464,7 @@ header .content h1 {
   font-weight: 600;
   color: white;
   font-family: "Playfair Display";
+  letter-spacing: 0.5px;
 }
 @media (min-width: 768px) {
   header .content h1 {
@@ -483,8 +487,9 @@ header .content span {
   display: none;
   font-size: 10px;
   color: #fae4d3;
-  font-style: "Work Sans";
-  font-weight: "Regular";
+  font-family: "Work Sans";
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 @media (min-width: 768px) {
   header .content span {
@@ -768,7 +773,7 @@ footer .content .follow h4 {
 }
 .hero .sub-content-left h2 {
   font-family: "Playfair Display";
-  font-weight: Bold;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.75px;
   margin-bottom: 15px;
@@ -777,6 +782,7 @@ footer .content .follow h4 {
   font-family: "Work Sans";
   font-weight: 400;
   font-size: 14px;
+  margin-bottom: 15px;
 }
 .hero .sub-content-right {
   background-color: #b7b7a5;
@@ -801,7 +807,7 @@ footer .content .follow h4 {
   font-family: "Work Sans";
   font-weight: 600;
   font-size: 14px;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .hero span {
   font-family: "Playfair Display";
@@ -874,10 +880,6 @@ footer .content .follow h4 {
 /* =============
     Gallery
 ============= */
-.gallery {
-  display: flex;
-  width: 100%;
-}
 @media (min-width: 1200px) {
   .gallery {
     grid-template-areas: "g1 g2" "g1 g3";
@@ -885,7 +887,9 @@ footer .content .follow h4 {
 }
 .gallery ul {
   list-style: none;
-  padding-top: 30px;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 45px;
 }
 .gallery ul img {
   width: 100%;
