@@ -373,6 +373,21 @@ body .container {
 body .container .content {
   grid-area: content;
 }
+body ul {
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  list-style: none;
+}
+body .show-menu {
+  display: block !important;
+}
+@media (min-width: 992px) {
+  body .hide-for-lg {
+    display: none;
+  }
+}
 
 /* =============
     Typography
@@ -420,18 +435,104 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  display: none;
+  height: 100vh;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+}
+@media (min-width: 992px) {
+  nav {
+    background-color: #173726;
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+nav aside {
+  display: flex;
+  justify-content: flex-end;
+}
+nav aside button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+nav aside button:hover {
+  cursor: pointer;
+}
+nav ul {
+  height: 100%;
+  padding-top: 20%;
+}
+@media (min-width: 992px) {
+  nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+}
+nav ul li {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  nav ul li {
+    border-left: 1px solid #fff;
+    margin-bottom: 0;
+    margin-left: 16px;
+    padding-left: 24px;
+  }
+}
+nav ul li a:link,
+nav ul li a:visited {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+  }
+}
+nav ul li a:link:hover, nav ul li a:link:active,
+nav ul li a:visited:hover,
+nav ul li a:visited:active {
+  color: #b7b7a5;
+}
+nav ul li:first-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
 header {
   background-color: #173726;
   color: white;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+  padding: 24px 0;
+  width: 100%;
+  background-color: #173726;
 }
 header .content .site-logo {
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 37px;
+  width: 40px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -439,15 +540,15 @@ header .content .site-logo {
 @media (min-width: 768px) {
   header .content .site-logo {
     display: inline-block;
-    width: 33px;
+    width: 43px;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 1px;
     padding-bottom: 1px;
   }
 }
 @media (min-width: 992px) {
   header .content .site-logo {
-    width: 40px;
+    width: 45px;
     margin-left: 45px;
     margin-top: 25px;
   }
@@ -470,12 +571,14 @@ header .content h1 {
   header .content h1 {
     display: inline-block;
     font-size: 32px;
-    padding: 20px;
+    margin-left: -105px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 992px) {
   header .content h1 {
     font-size: 36px;
+    margin-top: 43px;
   }
 }
 @media (min-width: 1200px) {
@@ -506,6 +609,47 @@ header .content span {
   header .content span {
     font-size: 13px;
   }
+}
+header div {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger";
+}
+@media (min-width: 992px) {
+  header div {
+    grid-template-areas: "logo nav";
+  }
+}
+header div .logo {
+  color: #62929e;
+  font-size: 40px;
+}
+header div .burger-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  header div .burger-container {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  header div .burger-container {
+    display: none;
+  }
+}
+header div .burger-container button {
+  border: none;
+  background-color: transparent;
+  color: #fae4d3;
+  font-size: 30px;
+  margin-top: -75px;
+  margin-right: -25px;
+}
+header div .burger-container button:hover {
+  cursor: pointer;
 }
 
 /* =============
