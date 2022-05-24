@@ -10,24 +10,22 @@ header{
             
             .site-logo{
                 display: block;
-                padding-top: 15px;
                 padding-bottom: 15px;
-                width: 40px;
-                margin-left:auto;
-                margin-right: auto;
-                margin-top: 10px;
+                width:37px;
+               
+                
                    
 
                 @include md{
                 display: inline-block;
-                width: 43px;
+                width: 33px;
                 margin-left: 30px;
-                margin-top: 1px;
+                margin-top: 20px;
                 padding-bottom: 1px;
                 }
 
                 @include lg{
-                width: 45px;
+                width: 40px;
                 margin-left: 45px;
                 margin-top: 25px;
                 }
@@ -49,15 +47,11 @@ header{
                 @include md{
                     display: inline-block;
                     font-size: 32px;
-                    margin-left: -105px;
-                    margin-top: 20px;
-                    
+                    padding:20px;
                 }
 
                 @include lg{
                     font-size: 36px;
-                    margin-top: 43px;
-
                 }
 
                 @include xl{
@@ -101,8 +95,6 @@ header{
         
             div{
                 grid-area: header;
-        
-                display: grid;
                 grid-template-columns: 50% auto;
                 grid-template-areas: "logo burger";
         
@@ -111,13 +103,10 @@ header{
         
                 }
         
-                .logo{
-                    color: $blue;
-                    font-size: 40px;
-                }
+               
         
                 .burger-container{
-                    display: flex;
+                    
                     justify-content: flex-end;
                     align-items: center;
 
@@ -135,8 +124,6 @@ header{
                         background-color: transparent;
                         color: $lightpeach;
                         font-size: 30px;
-                        margin-top: -75px;
-                        margin-right: -25px;
                         
         
                         &:hover{
